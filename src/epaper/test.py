@@ -4,7 +4,7 @@ import sys
 import os
 
 import logging
-from lib import epd7in5_V2
+from lib import epd7in5
 import time
 from PIL import Image,ImageDraw,ImageFont
 import traceback
