@@ -23,7 +23,9 @@ try:
     Himage = Image.open('./its-alive.bmp')
     # Himage = Image.open('./screenshot.png')
     # Himage = Image.open('./7in5.bmp')
-    # print(Himage.tobytes())
+    print(epd.getbuffer(Image.open('./7in5.bmp')))
+    print('\n\n\n\n\nFOOOBAR\n\n\n\n')
+    print(epd.getbuffer(Image.open('./its-alive.bmp')))
     epd.display(epd.getbuffer(Himage))
 
     # logging.info("Clear...")
