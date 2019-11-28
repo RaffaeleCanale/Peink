@@ -4,8 +4,8 @@ import sys
 import os
 
 import logging
-from lib import epd7in5
 import time
+from epd_factory import get_epd
 from PIL import Image,ImageDraw,ImageFont
 import traceback
 
@@ -14,13 +14,15 @@ logging.basicConfig(level=logging.DEBUG)
 try:
     logging.info("epd7in5 Demo")
 
-    epd = epd7in5.EPD()
+    epd = get_epd()
     logging.info("init and Clear")
     epd.init()
     epd.Clear()
 
     logging.info("FOOBAR")
-    Himage = Image.open('./its-alive.bmp')
+    # Himage = Image.open('./its-alive.bmp')
+    Himage = Image.open('./7in5.bmp')
+    print(Himage)
     epd.display(epd.getbuffer(Himage))
 
     # logging.info("Clear...")

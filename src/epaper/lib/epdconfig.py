@@ -145,7 +145,8 @@ class JetsonNano:
 if os.path.exists('/sys/bus/platform/drivers/gpiomem-bcm2835'):
     implementation = RaspberryPi()
 else:
-    implementation = JetsonNano()
+    # implementation = JetsonNano()
+    implementation = {}
 
 for func in [x for x in dir(implementation) if not x.startswith('_')]:
     setattr(sys.modules[__name__], func, getattr(implementation, func))
