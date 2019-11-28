@@ -20,7 +20,8 @@ try:
     epd.Clear()
 
     logging.info("FOOBAR")
-    Himage = Image.open('./its-alive.bmp')
+    # Himage = Image.open('./its-alive.bmp')
+    Himage = Image.open('./screenshot.png')
     # Himage = Image.open('./7in5.bmp')
     # print(Himage.tobytes())
     epd.display(epd.getbuffer(Himage))
