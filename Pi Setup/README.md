@@ -9,3 +9,4 @@ By default, ssh is disabled.
 
 - Connect to the Pi and login. User is "pi" and password is "raspberry"
 - Run `sudo raspi-config` and enable ssh in the networking options
+
