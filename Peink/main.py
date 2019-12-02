@@ -35,6 +35,6 @@ if __name__ == '__main__':
         # Lazy import because this depends on RPi only dependencies
         from viewer.epaper.epaper import ePaper
         ep = ePaper()
-    renderer = Renderer(ep)
+    renderer = Renderer(ep, config['browser'])
     renderer.render(widgets)
 

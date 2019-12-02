@@ -1,9 +1,10 @@
 import logging
 
-from viewer.epaper.lib.epd7in5 import EPD
+from viewer.epaper.libs.epd7in5 import EPD
 from PIL import Image
 
 from core.utils.file_utils import checksum
+
 
 class ePaper:
 

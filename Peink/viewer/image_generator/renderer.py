@@ -7,8 +7,9 @@ from viewer.image_generator.utils import templater
 
 class Renderer:
 
-    def __init__(self, epaper):
+    def __init__(self, epaper, browser):
         self.epaper = epaper
+        self.browser = browser
 
     def render(self, widgets):
         index_file = self._generate_html(widgets)
@@ -27,7 +28,7 @@ class Renderer:
     def _capture_screenshot(self, html_file):
         screenshot_file = file_utils.create_tmp_file(suffix='.png')
         command = '{browser} --headless --screenshot={screenshot} --window-size=640,384 {file}'.format(
-            browser='google-chrome',
+            browser=self.browser,
             file=html_file,
             screenshot=screenshot_file,
         )
