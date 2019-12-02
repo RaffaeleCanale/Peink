@@ -1,0 +1,13 @@
+class GithubPrLabels:
+    CODE_READY_FOR_REVIEW = 'Code Review: Ready for Review'
+    CODE_APPROVED = 'Code Review: Approved'
+    CODE_CHANGES_REQUIRED = 'Code Review: Changes Required'
+    UI_READY_FOR_REVIEW = 'UI Review: Ready for Review'
+    UI_APPROVED = 'UI Review: Approved'
+    UI_CHANGES_REQUIRED = 'UI Review: Changes Required'
+    PRODUCT_READY_FOR_REVIEW = 'Product Review: Ready for Review'
+    PRODUCT_APPROVED = 'Product Review: Approved'
+    PRODUCT_CHANGES_REQUIRED = 'Product Review: Changes Required'
+    BLOCKED = 'Blocked'
+    WORK_IN_PROGRESS = 'Work in Progress'
+    READY_TO_MERGE = 'Ready to merge'

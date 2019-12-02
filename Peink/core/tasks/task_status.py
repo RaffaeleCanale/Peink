@@ -1,0 +1,11 @@
+class TaskStatus:
+    TODO = 'Todo'
+    IN_PROGRESS = 'In Progress'
+    WAITING_FOR_REVIEW = 'Waiting for review'
+    CHANGES_REQUESTED = 'Changes requested'
+    APPROVED = 'Approved'
+    WAITING_FOR_QA = 'Waiting for QA'
+    REVIEW_REQUESTED = 'Review requested'
+    QA_REQUESTED = 'QA requested'
+    WAITING_FOR_CHANGES = 'Waiting for changes'
+    DONE = 'Done'
