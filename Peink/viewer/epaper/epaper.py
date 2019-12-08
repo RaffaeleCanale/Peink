@@ -50,6 +50,7 @@ class ePaper:
         return {
             '24': ImageFont.truetype(font_file, 24),
             '18': ImageFont.truetype(font_file, 18),
+            '11': ImageFont.truetype(font_file, 11),
         }
 
     @property
